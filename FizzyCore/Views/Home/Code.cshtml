@@ -2,7 +2,45 @@
     ViewData["Title"] = "Code";
 }
 
-<h1>The Code</h1>
+<div class="row text-center">
+    <h1>The Code</h1>
+</div>
+<div class="row text-center">
+    <h4>This Code display is powered by PrismJS</h4>
+</div>
+<hr />
+<br />
+<div class="row">
+    <div class="col">
+<pre>
+    <code class="language-js line-numbers">[HttpPost]
+        public IActionResult Solve(int userIn1, int userIn2)
+        {
+            var output = "";
+            for (int i = 1; i <= 100; i++)
+            {
+                if(i % userIn1 == 0 && i % userIn2 == 0)
+                {
+                    output += "FizzBuzz, ";
+                }
+                else if (i % userIn1 == 0)
+                {
+                    output += "Fizz, ";
+                }
+                else if(i % userIn2 == 0)
+                {
+                    output += "Buzz, ";
+                }
+                else
+                {
+                    output += i + ", ";
+                }
+            }
+        ViewData["Output"] = output;
+        return View();
+        }
 
-<h4>This Code display is powered by PrismJS</h4>
-
+    </code>
+</pre>
+    </div>
+</div>

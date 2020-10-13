@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - FizzyCore</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/prism (2).css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -28,7 +29,7 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Code">Code</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">GitHub</a>
+                            <a class="nav-link text-light" target="_blank" href="https://github.com/joneseli7395/FizzyCore">GitHub</a>
                         </li>
 
                     </ul>
@@ -52,6 +53,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/prism (2).js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
