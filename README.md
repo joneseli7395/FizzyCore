@@ -1,2 +1,4 @@
-# FizzyCore
- FizzBuzz in C#
+# FizzBuzz...but written in C#
+
+## 
+
